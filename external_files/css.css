@@ -1,0 +1,161 @@
+/*! normalize.css v6.0.0 | MIT License | github.com/necolas/normalize.css*/
+html{line-height:1.15; -ms-text-size-adjust:100%; -webkit-text-size-adjust:100%;}
+article, aside, footer, header, nav, section{display:block;}
+h1{font-size: 2em; margin:0.67em 0;}
+figcaption, figure, main{display:block;}
+figure{margin:1em 40px;}
+hr{box-sizing:content-box; height:0; overflow:visible;}
+pre{font-family:monospace, monospace; font-size:1em;}
+a{background-color:transparent; -webkit-text-decoration-skip:objects;}
+abbr[title]{border-bottom:none; text-decoration:underline; text-decoration:underline dotted;}
+b, strong{font-weight:inherit;}
+b, strong{font-weight:bolder;}
+code, kbd, samp{font-family:monospace, monospace; font-size:1em;}
+dfn{font-style:italic;}
+mark{background-color:#ff0; color:#000;}
+small{font-size:80%;}
+sub, sup{font-size:75%; line-height:0; position:relative; vertical-align:baseline;}
+sub{bottom:-0.25em;}
+sup{top:-0.5em;}
+audio, video{display:inline-block;}
+audio:not([controls]){display:none; height:0;}
+img{border-style:none;}
+svg:not(:root){overflow:hidden;}
+button, input, optgroup, select, textarea{margin:0;}
+button, input{overflow:visible;}
+button, select{text-transform:none;}
+button, html [type="button"], [type="reset"], [type="submit"]{-webkit-appearance:button;}
+button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-moz-focus-inner, [type="submit"]::-moz-focus-inner{border-style:none; padding:0;}
+button:-moz-focusring, [type="button"]:-moz-focusring, [type="reset"]:-moz-focusring, [type="submit"]:-moz-focusring{outline: 1px dotted ButtonText;}
+legend{box-sizing:border-box; color:inherit; display:table; max-width:100%; padding:0; white-space:normal;}
+progress{display:inline-block; vertical-align:baseline;}
+textarea{overflow:auto;}
+[type="checkbox"], [type="radio"]{box-sizing:border-box; padding:0;}
+[type="number"]::-webkit-inner-spin-button, [type="number"]::-webkit-outer-spin-button{height:auto;}
+[type="search"]{-webkit-appearance:textfield; outline-offset:-2px;}
+[type="search"]::-webkit-search-cancel-button, [type="search"]::-webkit-search-decoration{-webkit-appearance: none;}
+::-webkit-file-upload-button{-webkit-appearance:button; font:inherit;}
+details, menu{display:block;}
+summary{display:list-item;}
+canvas{display:inline-block;}
+template{display:none;}
+[hidden]{display:none;}
+
+
+/*CSS*/
+body{margin:0px;}
+*{box-sizing:border-box; font-family: 'Raleway', sans-serif;}
+#wrapper{max-width:960px; min-width:300px; margin:0px auto;}
+hr{border:3px #ce788c solid; margin-top:50px;}
+
+/*Header*/
+header{background:#ce788c; width:100%; height:100px;}
+header img{height:100px; float:left;}
+#logotxt{float:left; color:white; font-size:40px; font-weight:bold; margin: 24px 0px 0px 20px;}
+#address{float:right; color:#850929; text-align:right; margin:10px 20px 0px 0px;}
+#address a{color:#850929; text-decoration:none; transition:all 0.3s linear;}
+#address a:hover{color:white;}
+
+/*Rotator*/
+#rotator{
+	width:100%;
+	height:300px;
+	background-color:#cb5574;
+	background-image:url(../images/rotator/1.jpg);
+	background-position:center;
+	background-size:cover;
+	transition:all 0.5s linear;
+	position:relative;}
+
+/*Nav*/
+#navbg{width:100%; height:40px; opacity:0.7; background-color:black; position:absolute; left:0px; bottom:0px; transition:all 0.5s ease-out;}
+nav{position:absolute; left:0px; bottom:0px;}
+#menuicon{display:none; width:40px; height:40px; transition:all 0.5s ease-out;}
+#menuicon:hover{cursor:pointer;}
+nav a{
+	display:inline-block;
+	text-decoration:none;
+	color:white;
+	font-weight:bold;
+	font-size:20px;
+	padding:8px 10px;
+	transition:all 0.5s ease-out;}
+nav a:hover{background-color:#850929; cursor:pointer;}
+
+/*Greeting*/
+#greeting{width:100%; padding:20px; color:#b54963; font-size:20px;}
+#greeting p:first-child:first-letter{font-size:40px;}
+
+/*Services*/
+#services{width:100%; padding:20px;}
+#services h1{color:#850929; font-weight:bold;}
+#services h2{color:#b54963; font-weight:bold;}
+#services h3{color:#cb5574;}
+#services h4{color:#ce788c;}
+
+/*Reviews*/
+#reviews{width:100%; padding:20px;}
+.quote{font-size:20px; color:#850929;}
+.quote::first-letter{font-size:40px;}
+.author{font-size:18px; font-weight:bold; font-style:italic; color:#ce788c;}
+
+/*Contact*/
+#contact{width:280px; margin:40px auto 20px auto; text-align:center; color:#850929; font-size:20px;}
+#contact fieldset{border-color:#850929;}
+#contact legend{width:50%; text-align:center; font-weight:bold; position:relative; left:25%;}
+
+/*Sidelinks*/
+#sidelinks{width:100%; padding:20px; text-align:center;}
+#sidelinks p{font-style:italic; font-size:24px; color:#b54963;}
+#sidelinks a{
+	display:block;
+	width:30%;
+	height:200px;
+	margin:20px 1.5%;
+	padding-top:5px;
+	background-color:#850929;
+	float:left;
+	text-align:center;
+	background-position:center;
+	background-size:cover;
+	text-decoration:none;
+	color:white;
+	font-weight:bold;
+	font-size:20px;
+	text-shadow:2px 2px 2px black;
+	transition:all 0.5s ease-out;}
+#sidelinks a:hover{color:#850929;}
+#sidelink1{background-image:url(../images/links1.jpg);}
+#sidelink2{background-image:url(../images/links2.jpg);}
+#sidelink3{background-image:url(../images/links3.jpg);}
+#sidelink4{background-image:url(../images/links4.jpg);}
+
+/*Footer*/
+footer{background:#ce788c; width:100%; height:100px; text-align:center; padding-top:10px; clear:both;}
+footer a, footer span{
+	display:inline-block;
+	text-decoration:none;
+	color:#850929;
+	font-size:16px;
+	line-height:0px;
+	padding:8px 5px;
+	transition:all 0.5s ease-out;}
+footer a:hover{color:white;}
+
+/*Responsive*/
+@media screen and (max-width:959px){
+	#logotxt{font-size:30px; margin: 29px 0px 0px 20px;}
+	hr{width:90%;}
+}
+@media screen and (max-width:640px){
+	header{height:240px; padding-top:10px; text-align:center;}
+	header img{float:none; display:block; margin:auto;}
+	#logotxt{float:none; display:block; margin:0px;}
+	#address{float:none; display:block; text-align:center; margin:10px 0px 0px 0px;}
+	#rotator{height:200px;}
+	#navbg{width:40px;}
+	#menuicon{display:block;}
+	nav a{display:none; font-size:16px; padding:11px 6px;}
+	#sidelinks a{width:100%;}
+	#services{text-align:center;}
+}
