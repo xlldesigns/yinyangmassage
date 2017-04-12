@@ -1,3 +1,4 @@
+/*Check Contact Form*/
 function contact(){
 	var first = document.getElementById('first').value;
 	var last = document.getElementById('last').value;
@@ -12,24 +13,29 @@ function contact(){
 	}
 }
 
-var t = 2;
+/*Image Rotation*/
+var images = [
+'images/rotator/1.jpg',
+'images/rotator/2.jpg',
+'images/rotator/3.jpg',
+'images/rotator/4.jpg',
+'images/rotator/5.jpg'];
+var t = 1;
 function rotate(){
 	var rot = document.getElementById('rotator');
 	
-	if(t==1){
-		rot.style.backgroundImage="url(images/rotator/"+t+".jpg)";
-		t++;
-	}else if(t==2){
-		rot.style.backgroundImage="url(images/rotator/"+t+".jpg)";
+	if(t!=4){
+		rot.style.backgroundImage="url("+images[t]+")";
 		t++;
 	}else{
-		rot.style.backgroundImage="url(images/rotator/"+t+".jpg)";
-		t=1;
+		rot.style.backgroundImage="url("+images[t]+")";
+		t=0;
 	}
 }
 
 setInterval("rotate()", 4000);
 
+/*Open Nav*/
 $(document).ready(function(){
 	$('#menuicon').click(function(){
 		$('#menuicon').css("display","none");
